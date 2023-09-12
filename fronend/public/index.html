@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Web site created using create-react-app"/>
+    <title>YUM HUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <nav class="navbar navbar-expand-lg navigation-wrap">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="../images/Yum Hub (2).png" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#login">Log In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#explore-foods">Explore Foods</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Reveiws</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li><button class="main-btn">1200 345 123</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="container-fluid px-0 top-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <h1>Recipe is a story that ends with the good meal</h1>
+              <p>This is one of the most popular types of recipe websites out there. It’s a great way to share your love of cooking and baking with others by offering up your own tried-and-true recipes. Here you have the freedom to explore different types of cuisine, ingredients, and cooking techniques, allowing you to create a diverse array of dishes to share with your family and friends.
+                Whatever your niche is – vegan, gluten-free cooking, desserts, or international cuisine – there is a specific audience for what you have to offer. For a good cooking blog, make sure you provide clear recipe details and visually appealing images</p>
+              <div class="mt-4">
+                <button class="main-btn">Order now <i class="fas fa-shopping-basket ps-3"></i></button>
+                <button class="white-btn ms-lg-4 mt-lg-0 mt-4">Order now <i class="fas fa-angle-right ps-3"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="login">
+      <div className='d-flex justify-content-center align-items-center vh-100 bg-info' id="b-img">
+        <div className="border border-3 border-success p-5 bg-light" id="bg-box">
+            <form>
+                <h2>Login</h2>
+                <label>Email</label>
+                <input type='email' placeholder="Enter your email" name="Email" className="form-control"/>
+                <div className="mb-3">
+                <label htmlFor='Password'>Password</label>
+                <input type='password' placeholder='Enter your password' name='Password' className="form-control"/>
+                </div>
+                <div className="mb-3">
+                <input type="checkbox"/>
+                <label htmlFor='Checkbox' className='ms-2'>
+                  Remember your password
+                </label>
+                </div>
+                <div className='d-grid'>
+                <button className="btn_btn-dange">Login</button>
+                </div>
+                <br/>
+               
+            </form>
+        </div>
+    </div>
+    </section>
+    <section id="counter">
+      <section class="counter-section">
+        <div class="container">
+          <div class="row text-center">
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">+
+            <h2>
+              <span id="count1"></span>
+            </h2>
+            <p>SAVINGS</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">+
+            <h2>
+              <span id="count2"></span>
+            </h2>
+            <p>PHOTOS</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">+
+            <h2>
+              <span id="count3"></span>
+            </h2>
+            <p>ROCKETS</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">+
+            <h2>
+              <span id="count4"></span>
+            </h2>
+            <p>GLOBES</p>
+          </div>
+        </div>
+        </div>
+      </section>
+    </section>
+    <section id="about">
+      <div class="about-section wrapper">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+              <div class="card border-0">
+                <img src="images/darbari sambar.jpg" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 text-sec">
+              <h2>We pride ourselves on giving you the best way of preparing the dish.</h2>
+              <p>You can access any food recipe of your wish and dine with the dishes you made. You can also share your best recipe in here. </p>
+              <button class="main-btn mt-4">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="container food-type">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+            <h2>We collect the information from all our customers and give you the best.</h2>
+            <p>These are the different categories of dishes</p>
+            <ul class="list-unstyled py-3">
+               <li>Breakfast</li>
+               <li>Lunch</li>
+               <li>Dinner</li>
+            </ul>
+            <button class="main-btn mt-4">Learn More</button>
+            </div>
+            <div class="col-lg-7 col-md-12">
+              <div class="card border-0">
+                <img src="images/salad.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="story">
+      <div class="story-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="text-content">
+                <h2>When a man's stomach is full it makes no difference whether he is rich or poor.</h2>
+                <p></p>
+                <button class="main-btn mt-3">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explore-foods">
+        <div class="explore-food wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="text-content text-center">
+                  <h2>Explore Our Foods</h2>
+                  <p>
+                    Since the cooking method varies with changing areas or regions, each dish has something unique about itself. To be precise, about 31 dishes define the Indian cuisines. According to scientists, they have examined more than 2,000 Indian dishes in a common thread.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-5">
+              <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                <div class="card">
+                  <img src="images/pancake.webp" class="img-fluid">
+                  <div class="pt-3">
+                    <h4>
+                      Perfect Pancake
+                    </h4>
+                    <p>Time:28 Mins |Serves:6</p>
+                    <a href="https://www.allrecipes.com/perfect-pancakes-recipe-7568285" target="_blank"><button class="mt-4 main-btn">Explore</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+              <div class="card">
+                <img src="images/chicken curry.webp" class="img-fluid">
+                <div class="pt-3">
+                  <h4>
+                    Indian Chicken Curry
+                  </h4>
+                  <p>Time:1 Hr |Serves:6</p>
+                  <a href="https://www.allrecipes.com/recipe/212721/indian-chicken-curry-murgh-kari/" target="_blank"><button class="mt-4 main-btn">Explore</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="card">
+              <img src="images/halva.webp" class="img-fluid">
+              <div class="pt-3">
+                <h4>
+                 Carrot Halwa
+                </h4>
+                <p>Time:1 Hr:40 Mins |Serves:6</p>
+                <a href="https://www.allrecipes.com/recipe/282238/gajar-ka-halwa-carrot-halwa/" target="_blank"><button class="mt-4 main-btn">Explore</button></a>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="wrapper testimonial-section">
+          <div class="container text-center">
+            <div class="text-center pb-4">
+              <h2>Testimonial</h2>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-lg-10 offset-lg-1">
+                <div id="carouselExampleDark" class="carousal slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button"  data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button"  data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button"  data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="carousel-caption">
+                        <img src="images/profile.jpeg" >
+                        <p>Designed for the purpose that everyone can get a good recipe and get delighted by the taste of the food.</p>
+                        <h5>Prathiksha  Sonia Puthran  Navya R Shetty  Gayathri S Naik
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="faq wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="text-center pb-4">
+                  <h2>Frequently asked questions</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-5">
+              <div class="col-sm-6 mb-4">
+                <h4><span>~</span>What are the benefits of eating gluten-free foods?</h4>
+                <p>The benefits of a gluten-free diet are largely unsubstantiated. Gluten is a protein found in wheat, barley, and rye. Some people have a condition called celiac disease, which is caused by an intolerance to gluten. Symptoms of celiac disease include diarrhea, weight loss, and fatigue. A gluten-free diet is the only treatment for celiac disease. However, many people without celiac disease choose to follow a gluten-free diet because they believe it is healthier. There is no evidence that a gluten-free diet has any health benefits over a regular diet.</p>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <h4><span>~</span>Can I make substitutions in recipes?</h4>
+                <p>You can make substitutions in recipes, but you need to be careful. If you are substituting ingredients that are not similar in size or volume, you may need to adjust the other ingredients in the recipe as well. Also, be aware that some substitutions may not work well together and may not result in a dish that is as tasty as the original.</p>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <h4><span>~</span>What are the benefits of eating organic foods?</h4>
+                <p>Organic foods are those that are grown without the use of pesticides, synthetic fertilizers, or genetically modified organisms (GMOs). There is no scientific evidence that organic foods are healthier than conventionally grown foods. However, some people prefer to eat organic foods because they believe they are less likely to be contaminated with harmful chemicals.</p>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <h4><span>~</span>Should I use butter or oil when cooking?</h4>
+                <p>It is generally recommended to use oil when cooking, as it has a higher smoke point than butter and is less likely to burn. However, some people prefer the flavor of butter in certain dishes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="book-food">
+        <div class="book-food">
+          <div class="container book-food-text">
+            <div class="row-text-center">
+              <div class="col-lg-9 col-md-12">
+                <h2>Baked fresh daily with passion.</h2>
+              </div>
+              <div class="col-lg-3 col-md-12 mt-lg-0 mt-4">
+                <button class="main-btn">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="newsletter">
+        <div class="newsletter wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="sol-sm-12">
+                <div class="text-content text-center pb-4">
+                  <h2>Hurry up Subscribe our newsletter </h2>
+                  <p></p>
+                </div>
+                <form class="newsletter">
+                  <div class="newsletter">
+                    <div class="row">
+                      <div class="col-md-8 col-12">
+                        <input class="form-control" placeholder="Email Address here" name="email" type="email">
+                      </div>
+                      <div class="col-md-4 col-12">
+                        <button class="main-btn" type="submit">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <footer id="footer">
+      <div class="footer py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a class="footer-link" href="#">Register</a>
+              <a class="footer-link" href="#">Forum</a>
+              <a class="footer-link" href="#">Affiliate</a>
+              <a class="footer-link" href="#">FAQ</a>
+              <div class="footer-social pt-4 text-center">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="footer-copy">
+                <div class="copy-right text-center pt-5">
+                  <p class="text-light">© 2023. Yum Hub. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>  
+    
+  </body>
+  <script src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
+<!--HTML-->
